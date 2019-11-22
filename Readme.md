@@ -18,7 +18,7 @@ Bitcoin Address Indexing Service is a web service providing Bitcoin address-rela
 How does it work
 -----
 All address relevant information is powered by [btcd](https://github.com/btcsuite/btcd) node with method `searchrawtransactions`.  
-By taking advantaging of caching technique solutions such as `Redis`, `MongoDB`, it makes a lot improvements on performance for faster response time compared to `btcd`.  
+By taking advantage of caching and persistent data storage such as `Redis`, `MongoDB`, it makes a lot improvements on performance for faster response time compared to `btcd`.  
 `RabbitMQ` takes a role of messaging broker, exchanging messages between `btcd-address-indexing-worker` and `btcd-address-web-service`.  
 `btcd-address-indexing-worker` leverages with above technique solutions to index additional address relevant information for performance optimization. It also serves requests from `btcd-address-indexing-service`.
 
@@ -27,10 +27,10 @@ By taking advantaging of caching technique solutions such as `Redis`, `MongoDB`,
 Prerequisite
 -----
 * Go >= v1.12
-* btcd >= 0.12-beta
-* MongoDB >= v3.5
-* RabbitMQ >= 0.09
-* Redis >= 0.5
+* btcd >= v0.12.0-beta
+* MongoDB >= v3.6
+* RabbitMQ >= v3.8
+* Redis >= v5.0
 * `btcd-address-indexing-worker`
 
 Building and test
