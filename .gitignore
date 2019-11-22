@@ -1,0 +1,7 @@
+# Build intermediates
+node_modules
+build/
+dist/
+
+# Logging
+*.log
