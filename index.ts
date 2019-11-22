@@ -26,7 +26,7 @@ const mg = new Mongo();
  */
 const rs = new Redis({
     port: 6379,
-    host: "10.23.126.13"
+    host: "127.0.0.1"
 });
 
 /**

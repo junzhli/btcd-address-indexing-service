@@ -42,7 +42,7 @@ class Mongo {
         this.dbName = "bitcoinindex";
         this.collUser = "users";
         logger.debug("MongoHelper created");
-        MongoClient.connect("mongodb://10.23.127.243/bitcoinindex", {
+        MongoClient.connect("mongodb://127.0.0.1/bitcoinindex", {
             useNewUrlParser: true,
             poolSize: 10,
             reconnectTries: Number.MAX_VALUE
