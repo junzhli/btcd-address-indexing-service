@@ -26,6 +26,8 @@ By taking advantage of caching and persistent data storage such as `Redis`, `Mon
 
 Prerequisite
 -----
+* Nodejs >= v10
+* Yarn
 * Go >= v1.12
 * btcd >= v0.12.0-beta
 * MongoDB >= v3.6
