@@ -1,4 +1,5 @@
 # Bitcoin Address Indexing Service
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 Bitcoin Address Indexing Service is a web service providing Bitcoin address-related APIs for queries.
 
 ## Table of Contents
