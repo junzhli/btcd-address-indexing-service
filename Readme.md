@@ -20,8 +20,8 @@ How does it work
 -----
 All address relevant information is powered by [btcd](https://github.com/btcsuite/btcd) node with method `searchrawtransactions`.  
 By taking advantage of caching and persistent data storage such as `Redis`, `MongoDB`, it makes a lot improvements on performance for faster response time compared to `btcd`.  
-`RabbitMQ` takes a role of messaging broker, exchanging messages between `btcd-address-indexing-worker` and `btcd-address-web-service`.  
-`btcd-address-indexing-worker` leverages with above technique solutions to index additional address relevant information for performance optimization. It also serves requests from `btcd-address-indexing-service`.
+`RabbitMQ` takes a role of messaging broker, exchanging messages between [btcd-address-indexing-worker](https://github.com/junzhli/btcd-address-indexing-worker) and `btcd-address-web-service`.  
+`btcd-address-indexing-worker` leverages the above technique solutions to index additional address relevant information for performance optimization. It also serves requests from `btcd-address-indexing-service`.
 
 **Disclaimer: It is still in an early stage of development. For personal purposes only. It takes no responsibility on working in commercial purpose.**
 
@@ -34,7 +34,7 @@ Prerequisite
 * MongoDB >= v3.6
 * RabbitMQ >= v3.8
 * Redis >= v5.0
-* `btcd-address-indexing-worker`
+* [btcd-address-indexing-worker](https://github.com/junzhli/btcd-address-indexing-worker)
 
 Building and test
 -----
