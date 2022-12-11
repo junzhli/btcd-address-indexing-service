@@ -17,7 +17,7 @@
     "@types/node": "^12.12.7",
     "@types/redis": "^2.8.14",
     "amqplib": "^0.5.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http-status-codes": "^1.4.0",
     "mongodb": "^3.3.4",
     "redis": "^2.8.0",
